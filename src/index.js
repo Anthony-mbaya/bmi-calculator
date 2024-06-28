@@ -21,13 +21,15 @@ function BmiCalc() {
       if (bmiValue < 20) {
         message = "You are Underweight";
       } else if (bmiValue >= 20 && bmiValue < 28) {
-        message = "You are Normal";
+        message = "Oooh hoo! you are Normal";
       } else if (bmiValue >= 28 && bmiValue <= 35) {
         message = "You are OverWeight";
       } else {
         message = "You are Obese";
       }
       setMsg(message);
+      setHeight("");
+      setWeight("");
     } else {
       setBmi("");
       setMsg("");
